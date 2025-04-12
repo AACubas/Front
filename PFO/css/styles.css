@@ -1,0 +1,104 @@
+/* Tipografía base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #444;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #666;
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+}
+
+/* Tarjetas en Grid */
+.tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.tarjeta {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: auto;
+}
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+form button {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background: #555;
+}
+
+/* Películas */
+.pelicula {
+    margin-bottom: 1rem;
+}
+.pelicula img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
