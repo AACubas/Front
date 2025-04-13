@@ -18,7 +18,7 @@ Este proyecto es una landing page de portafolio personal desarrollada como parte
 - [x] Proyecto publicado utilizando GitHub Pages.
 - [x] En el `README.md` se indica la URL de GitHub Pages.
 
-🔗 URL de GitHub Pages: *[pegá el link acá]*
+🔗 URL de GitHub Pages: *https://aacubas.github.io/Front/*
 
 ---
 
