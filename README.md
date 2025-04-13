@@ -1,6 +1,6 @@
 # Práctica Formativa Obligatoria 1
 
-Este proyecto es una landing page de portafolio personal desarrollada como parte de la Práctica Formativa Obligatoria 1 de la materia. Se trabajó con HTML y CSS, organizando el contenido de manera semántica y aplicando principios de diseño responsivo.
+Este proyecto es una landing page de portafolio personal desarrollada como parte de la Práctica Formativa Obligatoria 1 de la materia de Front-end. Se trabajó con HTML y CSS, organizando el contenido de manera semántica y aplicando principios de diseño responsivo.
 
 ---
 
@@ -9,14 +9,14 @@ Este proyecto es una landing page de portafolio personal desarrollada como parte
 ### ✔️ Estructura del Proyecto:
 - [x] Archivo `index.html` ubicado en la raíz.
 - [x] Carpeta `css` que contiene el archivo `styles.css`.
-- [x] (Opcional) Carpeta `img` para recursos gráficos.
+- [x] Carpeta `img` para recursos gráficos.
 - [x] Archivo `README.md` creado, que incluye una breve descripción del TP y este checklist.
 
 ### ✔️ Repositorio y Publicación:
-- [ ] Repositorio en GitHub creado.
-- [ ] Proyecto subido al repositorio.
-- [ ] Proyecto publicado utilizando GitHub Pages.
-- [ ] En el `README.md` se indica la URL de GitHub Pages.
+- [x] Repositorio en GitHub creado.
+- [x] Proyecto subido al repositorio.
+- [x] Proyecto publicado utilizando GitHub Pages.
+- [x] En el `README.md` se indica la URL de GitHub Pages.
 
 🔗 URL de GitHub Pages: *[pegá el link acá]*
 
@@ -27,7 +27,7 @@ Este proyecto es una landing page de portafolio personal desarrollada como parte
 - [x] La tipografía importada se aplica en el sitio.
 
 **¿Por qué elegiste esa fuente?**  
-*Elegí la fuente Roboto porque es moderna, legible y muy utilizada en interfaces web.*
+*Elegí la fuente Roboto porque (honestamente), me pareció muy bonita.*
 
 ---
 
@@ -61,14 +61,8 @@ rem, vh).
 - [x] Se ha implementado al menos una animación o transición.
 
 **¿Qué animación o transición implementaste y por qué consideraste que era adecuada para tu proyecto?**  
-*Usé una transición de escala al hacer hover sobre las tarjetas para dar un efecto interactivo moderno.*
-
----
-
-### ✔️ Consideraciones Adicionales:
-- [x] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
-- [x] Se aplicaron buenas prácticas de accesibilidad (atributos `alt` en las imágenes).
-- [x] Se añadieron comentarios explicativos sobre decisiones de diseño.
+*Usé una transición de escala al hacer hover sobre las tarjetas para dar un efecto interactivo moderno
+ y llamativo.*
 
 ---
 

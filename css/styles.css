@@ -1,6 +1,7 @@
 /* Tipografía base */
 body {
     font-family: 'Roboto', sans-serif;
+    background: #48A868;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,7 +9,7 @@ body {
 
 /* Encabezado */
 header {
-    background: #333;
+    background: #4CAF50;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -19,7 +20,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    background: #444;
+    background: #4CAF50;
     padding: 0;
 }
 nav ul li {
@@ -32,29 +33,59 @@ nav ul li a {
     display: block;
 }
 nav ul li a:hover {
-    background-color: #666;
+    background-color: #2E7D32;
 }
 
 /* Secciones */
 section {
     padding: 2rem;
 }
+/* Estilo para la sección sobre mí */
+.biografia-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Para que se acomode en pantallas chicas */
+}
 
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Recorte circular */
+    object-fit: cover;
+}
+
+.biografia-contenido .texto{
+    flex: 1;
+}
+
+#peliculas h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
 /* Tarjetas en Grid */
 .tarjetas-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 .tarjeta {
-    background: #f4f4f4;
+    background: #4CAF50;
     padding: 1rem;
+    width: 280px;
     border-radius: 10px;
-    text-align: center;
     transition: transform 0.3s ease;
 }
 .tarjeta:hover {
     transform: scale(1.05);
+}
+
+.tarjeta img{
+    max-width: 100%;
+  
+    border-radius: 5px;
 }
 
 /* Formulario */
@@ -70,27 +101,18 @@ form input, form button {
     font-size: 1rem;
 }
 form button {
-    background: #333;
+    background: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
 }
 form button:hover {
-    background: #555;
-}
-
-/* Películas */
-.pelicula {
-    margin-bottom: 1rem;
-}
-.pelicula img {
-    max-width: 100%;
-    height: auto;
+    background: #2E7D32;
 }
 
 /* Footer */
 footer {
-    background: #222;
+    background: #4CAF50;
     color: white;
     text-align: center;
     padding: 1rem;
