@@ -18,19 +18,23 @@
     <!-- Navegación -->
     <nav>
         <ul>
-            <li><a href="#biografia">Sobre mí</a></li>
-            <li><a href="#peliculas">Películas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#biografia" class="modo-nav">Sobre mí</a></li>
+            <li><a href="#peliculas" class="modo-nav">Películas</a></li>
+            <li><a href="#contacto" class="modo-nav">Contacto</a></li>
+            <li><a href="#" id="modo-btn">🌙</a></li>
         </ul>
     </nav>
-
     <!-- Contenido principal -->
     <main>
+        
         <!-- Sección sobre mí -->
         <section id="biografia">
+            
             <div class="biografia-contenido">
-                <img src="img\BaulbasaurPerfil.png" alt="Avatar de perfil" class="avatar">
+                
+                <img src="img\BaulbasaurPerfil.png" alt="Avatar de perfil" class="avatar" id="avatar">
                 <div class="texto">
+                    
                     <h2>Sobre mí</h2>
                     <p>
                         ¡Hola! Soy un estudiante de Desarrollo Java en sus últimas materias para recibirse.
@@ -106,5 +110,62 @@
             <a href="https://www.linkedin.com/in/alejandro-cubas-139ab1244/" target="_blank">LinkedIn</a>
         </p>
     </footer>
+   
+    <!--Ocultar "Sobre mí clickeando img de perfil y cambio a modo oscuro"-->
+    <script>
+        const avatar = document.getElementById('avatar');
+        const textoBio = document.querySelector('.biografia-contenido .texto');
+        const modoBtn = document.getElementById('modo-btn');
+    
+        // Mostrar/ocultar texto al hacer clic en el avatar
+        avatar.addEventListener('click', () => {
+            textoBio.style.display = (textoBio.style.display === 'none') ? 'block' : 'none';
+        });
+    
+        // Alternar modo oscuro
+        modoBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita que recargue o salte a otra parte
+        document.body.classList.toggle('modo-oscuro');
+        const oscuroActivo = document.body.classList.contains('modo-oscuro');
+        modoBtn.textContent = oscuroActivo ? '☀️' : '🌙';
+        });
+    </script>
+     <!--Validación de formulario-->
+     <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            const inputs = document.querySelectorAll("form input[required]");
+            let valido = true;
+        
+            inputs.forEach(input => {
+                if (input.value.trim() === "") {
+                    valido = false;
+                    input.style.border = "2px solid red";
+                } else {
+                    input.style.border = "none";
+                }
+            });
+        
+            if (!valido) {
+                e.preventDefault();
+                alert("Por favor, completá todos los campos requeridos.");
+            }else{
+                e.preventDefault();
+                alert("¡Formulario enviado con éxito!");
+            }
+        });
+    </script>
+     <!--Contador de visitas -->
+     <script>
+        let visitas = localStorage.getItem("visitas") || 0;
+        visitas++;
+        localStorage.setItem("visitas", visitas);
+    
+        const contador = document.createElement("p");
+        contador.textContent = `Has visitado esta página ${visitas} veces.`;
+        document.body.appendChild(contador);
+     </script>
+    
+    
+
 </body>
 </html>
